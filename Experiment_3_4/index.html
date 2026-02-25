@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevJobs | Career Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">DevJobs</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Create Profile</a></li>
+        <li><a href="#postjob">Post Job</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <h1>Build Your Tech Career</h1>
+    <p>Create a profile and explore opportunities</p>
+</section>
+
+<section id="profile" class="section glass">
+    <h2>Create Profile</h2>
+    <form id="jobSearchForm" class="form-grid">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="text" id="desiredRole" placeholder="Desired Role" required>
+        <input type="text" id="preferredLocation" placeholder="Preferred Location" required>
+        <select id="experienceLevel" required>
+            <option value="">Experience Level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+        <button type="submit" class="btn-primary">Create</button>
+    </form>
+
+    <div class="profile-card">
+        <div class="profile-content">
+            <p>No profile created yet.</p>
+        </div>
+    </div>
+</section>
+
+<section id="postjob" class="section glass">
+    <h2>Post a Job</h2>
+    <form id="jobPostForm" class="form-grid">
+        <input type="text" id="jobTitle" placeholder="Job Title" required>
+        <input type="text" id="companyName" placeholder="Company Name" required>
+        <input type="text" id="jobLocation" placeholder="Location" required>
+        <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+        <button type="submit" class="btn-success">Post Job</button>
+    </form>
+</section>
+
+<section id="jobs" class="section">
+    <h2>Available Jobs</h2>
+    <div class="job-grid" id="jobGrid">
+        <div class="job-card">
+            <h3>Junior Python Developer</h3>
+            <p class="company">TechFlow</p>
+            <p class="location">Remote</p>
+            <button class="btn-success">Apply</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 DevJobs Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
