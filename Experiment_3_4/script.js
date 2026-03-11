@@ -26,7 +26,7 @@ const jobCard=document.createElement("div")
 jobCard.classList.add("job-card")
 
 jobCard.innerHTML=`
-<h3>${title}</h3>
+<h3>${title}</h3>n
 <p class="company">${company}</p>
 <p class="location">${location}</p>
 <p>${description}</p>
