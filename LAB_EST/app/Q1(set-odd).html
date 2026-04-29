@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        /* Basic page styling to center the form */
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f7f9fc; 
+            display: flex; 
+            justify-content: center; 
+            padding: 20px; 
+        }
+
+        /* Container for the form with border and spacing */
+        .form-container {
+            background: #ffffff;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        /* Spacing between different input fields */
+        .field-group { margin-bottom: 15px; }
+
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+
+        /* General styling for text-based inputs */
+        input[type="text"], input[type="email"], input[type="password"], 
+        input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Prevents input from overflowing container */
+        }
+
+        /* Styling for Submit and Reset buttons */
+        .btn-box { display: flex; gap: 10px; margin-top: 20px; }
+
+        button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s; /* Smooth color change on hover */
+        }
+
+        /* Specific colors and hover effects */
+        .btn-submit { background-color: #007bff; color: white; }
+        .btn-submit:hover { background-color: #0056b3; }
+
+        .btn-reset { background-color: #6c757d; color: white; }
+        .btn-reset:hover { background-color: #5a6268; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2 style="text-align: center;">Registration Form</h2>
+    <form>
+        <!-- Text fields -->
+        <div class="field-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="utkarsh" required>
+        </div>
+
+        <div class="field-group">
+            <label>Email</label>
+            <input type="email" placeholder="utkarsh@example.com" required>
+        </div>
+
+        <div class="field-group">
+            <label>Password</label>
+            <input type="password" required>
+        </div>
+
+        <div class="field-group">
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="1234567890">
+        </div>
+
+        <!-- Radio buttons for Gender selection -->
+        <div class="field-group">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+
+        <!-- Dropdown for Course selection -->
+        <div class="field-group">
+            <label>Course</label>
+            <select>
+                <option value="cs">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="ee">Electrical Engineering</option>
+            </select>
+        </div>
+
+        <!-- Checkboxes for Skills -->
+        <div class="field-group">
+            <label>Skills</label>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+        </div>
+
+        <!-- Multi-line text area -->
+        <div class="field-group">
+            <label>Address</label>
+            <textarea rows="3" placeholder="Enter your full address"></textarea>
+        </div>
+
+        <div class="btn-box">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

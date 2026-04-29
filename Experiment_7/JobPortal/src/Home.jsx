@@ -1,0 +1,10 @@
+function Home() {   
+    return (
+        <div>
+            <h1>Welcome to the Job Portal</h1>
+            <p>Find your dream job or post a job opening today!</p>
+        </div>
+    );
+}
+
+export default Home;
